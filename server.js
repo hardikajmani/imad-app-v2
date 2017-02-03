@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var artOne = {
+var articles = {
+   'art-one' : {
     title : "Article One",
     heading : "Article-one",
         content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
@@ -13,17 +14,17 @@ var artOne = {
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
     
-};
-var artTwo = {
+},
+   'art-two' : {
     title : "Article Two",
-    heading : "Article-Twp",
+    heading : "Article-Two",
         content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
     
-};
-var artThree = {
+},
+  'art-three' : {
     title : "Article Three",
     heading : "Article-Three",
         content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
@@ -31,6 +32,7 @@ var artThree = {
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
     
+}
 };
 
 function createTemplate(data){
@@ -74,17 +76,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/art-one',function (req,res){
-  res.send(createTemplate(artOne));
+app.get('/:artName',function (req,res){
+  var artName = req.params.artName;
+  res.send(createTemplate(articles[artName]));
 });
 
-app.get('/art-two',function (req,res){
-  res.send(createTemplate(artTwo));
-});
-
-app.get('/art-three',function (req,res){
-  res.send(createTemplate(artThree));
-});
 
 
 app.get('/ui/style.css', function (req, res) {
