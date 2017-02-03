@@ -79,11 +79,11 @@ app.get('/art-one',function (req,res){
 });
 
 app.get('/art-two',function (req,res){
-  rres.send(createTemplate(artTwo));
+  res.send(createTemplate(artTwo));
 });
 
 app.get('/art-three',function (req,res){
-  rres.send(createTemplate(artThree));
+  res.send(createTemplate(artThree));
 });
 
 
