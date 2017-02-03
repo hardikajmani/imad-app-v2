@@ -29,6 +29,7 @@ body {
 .img-medium {
     height: 200px;
     width: 200px;
+    text-align: center;
 }
 .container {
             color: #7b7878;
