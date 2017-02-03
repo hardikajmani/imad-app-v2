@@ -13,6 +13,10 @@ body {
     border-radius: 50%;
 }
 
+.shadow {
+    box-shadow: 10px 10px 5px #888888;
+}
+
 
 .text-big {
     font-size: 300%;
