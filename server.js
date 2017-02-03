@@ -14,6 +14,24 @@ var artOne = {
                     <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
     
 };
+var artTwo = {
+    title : "Article Two",
+    heading : "Article-Twp",
+        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
+                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    
+};
+var artThree = {
+    title : "Article Three",
+    heading : "Article-Three",
+        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
+                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    
+};
 
 function createTemplate(data){
 
@@ -61,11 +79,11 @@ app.get('/art-one',function (req,res){
 });
 
 app.get('/art-two',function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'art-two.html'));
+  rres.send(createTemplate(artTwo));
 });
 
 app.get('/art-three',function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'art-three.html'));
+  rres.send(createTemplate(artThree));
 });
 
 
