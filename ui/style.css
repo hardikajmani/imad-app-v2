@@ -10,7 +10,7 @@ body {
 
 .border {
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 20px 30px 40px 80px;
 }
 
 .shadow {
