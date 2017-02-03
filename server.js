@@ -5,12 +5,59 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var artOne = {
+    title : "Article One",
+    heading : "Article-one",
+        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
+                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
+                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    
+};
+
+function createTemplate(data){
+
+    var title = data.title;
+    var heading = data.heading;
+    var content = data.content;
+    
+    var htmlTemplate = 
+            `<!DOCTYPE html>
+        <html>
+        <head>
+          <title> ${title}</title>
+             <meta name="viewport" content="width-device-width,initial-scale=1"/>   <!-- For making the pages to adjust themselves for various                                                                                                                      screen sizes -->
+            <link rel="stylesheet" type="text/css" href="/ui/style.css" />
+          
+        </head>
+        
+        <body>
+            <div class="container">
+                    <div>
+                        <h1>
+                            <a href="/"> Home</a>
+                        </h1>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3> ${heading}</h3>
+                        ${content}
+                        
+                    </div>
+           </div>
+        </body>
+        </html>
+    `;
+
+ return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/art-one',function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'art-one.html'));
+  res.send(createTemplate(artOne));
 });
 
 app.get('/art-two',function (req,res){
