@@ -3,7 +3,7 @@ console.log('Loaded!');
 
 
 
-var img = document.getElementById('me');
+/*var img = document.getElementById('me');
 img.onclick = function () {
 var interval = setInterval(moveRight, 50);
 };
@@ -12,7 +12,7 @@ var marginLeft = 0;
 function moveRight(){
     marginLeft = marginLeft + 2;
     img.style.marginLeft = marginLeft + 'px';
-}
+}*/    //code to move elee=ment named me
 
 /*
 var element = document.getElementById('info');
