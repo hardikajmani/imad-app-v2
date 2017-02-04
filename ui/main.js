@@ -5,7 +5,7 @@ console.log('Loaded!');
 
 var img = document.getElementById('me');
 img.onclick = function () {
-var interval = setInterval(moverRight, 100);
+var interval = setInterval(moveRight, 100);
 };
 
 var marginLeft = 0;
