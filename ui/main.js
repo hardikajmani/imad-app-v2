@@ -1,10 +1,18 @@
 console.log('Loaded!');
 
 
+
+
 var img = document.getElementById('me');
 img.onclick = function () {
-    img.style.marginleft ='200px';
+var interval = setInterval(moverRight, 100);
 };
+
+var marginLeft = 0;
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+}
 
 /*
 var element = document.getElementById('info');
