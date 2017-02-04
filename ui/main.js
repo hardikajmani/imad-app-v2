@@ -1,8 +1,6 @@
 console.log('Loaded!');
 
 
-alert('Hy I\' m alert box and the js file is loaded'  );
-
 var img = document.getElementById('me');
 img.onclick = function () {
     img.style.marginleft ='200px';
