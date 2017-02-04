@@ -13,5 +13,5 @@ element.innerHTML = "I changed some text !!!";*/
 
 var img = document.getElementById('me');
 img.onclick = function () {
-    img.style.marginleft ='100px';
+    img.style.marginleft ='200px';
 };
