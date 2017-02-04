@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     background-color: white;
     margin-top: 75px;
-    padding: 20px;
+    padding: 30px;
     border: 2px solid blue;
     border-radius: 20px 30px 40px 80px;
 }
@@ -31,7 +31,8 @@ body {
 .tble {
     
     border: 2px solid black;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 20px 30px 40px 80px;
 }
 
 .container {
