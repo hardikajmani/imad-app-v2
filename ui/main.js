@@ -28,7 +28,7 @@ button.onclick = function (){
 }; 
 
 var nameInput = document.getElementById('name');
-var name = nameInput.value;
+var nameVal = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //Make request to the server and the send name
@@ -57,7 +57,7 @@ submit.onclick = function(){
         }; 
       
     //Make the request
-     request.open('GET','http://hardikajmani.imad.hasura-app.io/submit-name?name='+ name,true);
+     request.open('GET','http://hardikajmani.imad.hasura-app.io/submit-name?name='+ nameVal,true);
      request.send(null);
     
 };
