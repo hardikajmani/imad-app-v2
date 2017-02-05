@@ -28,13 +28,12 @@ button.onclick = function (){
 }; 
 
 var nameInput = document.getElementById('name');
-var nameVal = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //Make request to the server and the send name
        // Create request
         var request = new XMLHttpRequest();
-    
+    var nameVal = nameInput.value;
     // Capture the response and store it in a variable
         request.onreadystatechange = function(){
             
