@@ -1,6 +1,15 @@
-console.log('Loaded!');
 
 
+var button = document.getElementById('counter');
+
+button.onclick = function (){
+    
+    // Make a request to counter endpoint
+    
+    // Capture the response and store it in a variable
+    
+    //render the variable to the correct span
+}; 
 
 
 /*var img = document.getElementById('me');
