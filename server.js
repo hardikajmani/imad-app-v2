@@ -82,7 +82,7 @@ app.get('/:artName',function (req,res){
 });
 
 var counter = 0;
-app.get('/counter',function (req, res){
+app.get('/cs',function (req, res){
     counter++;
     res.send(counter.toString());
 });
