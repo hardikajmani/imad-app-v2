@@ -5,15 +5,26 @@ var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function (){
     
-    // Make a request to counter endpoint
+    // Create request
+        var request = new XMLHttpRequest();
     
     // Capture the response and store it in a variable
+        request.onreadystatechange = function(){
+            
+            if(request.readyState === XMLHttpRequest.DONE)
+            
+                if( request.status === 200){
+                    var counter = request.responseText;
+                    var span = document.getElementById('count');
+                    span.innerHTML = counter.toString();
+                }
+        }; 
+      
+    //Make the request
+     request.open('GET','http://hardikajmani.imad.hasura-app.io/cs',true);
+     request.send(null);
     
-    //render the variable to the correct span
     
-    counter++;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
 }; 
 
 
