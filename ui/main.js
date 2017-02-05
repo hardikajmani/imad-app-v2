@@ -27,13 +27,13 @@ button.onclick = function (){
     
 }; 
 
-var nameInput = document.getElementById('name');
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //Make request to the server and the send name
        // Create request
         var request = new XMLHttpRequest();
-    var nameVal = nameInput.value;
+    
     // Capture the response and store it in a variable
         request.onreadystatechange = function(){
             
@@ -54,7 +54,8 @@ submit.onclick = function(){
                 }
                    
         }; 
-      
+     var nameInput = document.getElementById('name');
+     var nameVal = nameInput.value;
     //Make the request
      request.open('GET','http://hardikajmani.imad.hasura-app.io/submit-name?name='+ nameVal,true);
      request.send(null);
