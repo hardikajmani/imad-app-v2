@@ -27,7 +27,7 @@ button.onclick = function (){
     
 };*/
 
-var cmmtButton = document.getElementById('counter');
+var cmmtButton = document.getElementById('cmmtSubmit');
 
 cmmtButton.onclick = function (){
     
