@@ -70,6 +70,10 @@ function createTemplate(data){
                         ${content}
                         
                     </div>
+                    <div>
+                        <input type="text" id="cmmtName" placeholder="Name">
+                        <textarea id="cmmt" placeholder="Enter a comment here"></textarea> 
+                    </div>
            </div>
         </body>
         </html>
