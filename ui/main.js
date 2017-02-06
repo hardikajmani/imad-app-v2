@@ -45,9 +45,20 @@ cmmtButton.onclick = function (){
                     span.innerHTML = counter.toString();
                 }
         }; 
-      
+     //choose the correct url for the request
+     var name = document.getElementById(title);
+     var no = 0;
+     switch(name){
+         
+        case 'Myself' : no=1;
+                         break;
+        case 'Hobbies' :    no=2;
+                        break;
+        case 'AIM': no=3;
+                        break;
+     }
     //Make the request
-     cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter',true);
+     cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter/'+ no,true);
      cmmtRequest.send(null);
     
     
