@@ -75,7 +75,7 @@ function createTemplate(data){
            
            <div class="comments">
                 <br/>
-                <h3> Comments </h3>
+                <h3> Comments     <span id="cmmtCount">0</span></h3>
                 <hr/>
                 <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
@@ -99,6 +99,12 @@ app.get('/', function (req, res) {
 var counter = 0;
 app.get('/cs',function (req, res){
     counter++;
+    res.send(counter.toString());
+});
+
+var cmmtCounter = 0;
+app.get('/cmmtCounter',function (req, res){
+    cmmtCounter++;
     res.send(counter.toString());
 });
 
