@@ -1,5 +1,4 @@
 
-window.onload = function(){
             var cmmtButton = document.getElementById('cmmtSubmit');
             //console.log(document.title);
             cmmtButton.onclick = function (){
@@ -37,6 +36,6 @@ window.onload = function(){
                  cmmtRequest.send(null);
                 
                 
-            };
+
 
 };
