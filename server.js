@@ -15,8 +15,7 @@ var articles = {
                                 <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM.
                                 <br/> This is my first article.
                                 <br/> I love programming!!!
-                                </p>`,
-                count:0
+                                </p>`
     
 },
    'art-two' : {
@@ -28,18 +27,17 @@ var articles = {
                                     <li>Making new things</li>
                                     <li>Gaming</li>
                                     <li>Photography</li>
-                                </ul>`,
-                count:0
+                                </ul>`
     
 },
+
   'art-three' : {
                 title : "AIM",
-                heading : "AIM in my life",
+                heading : "AIM",
                 content : `<p>Hey everyone in this article I'm going to tell about my career.
                                 <br/> I am planning to pursue MS in Artificial Intelligence from MIT after completing my B.tech which I am doing in   SRM University, Chennai. 
                                 <br/> Then I may or may not pursue a PHd but I surely want to work with NASA at some point of my life.
-                                </p>`,
-                count:0
+                                </p>`
     
 }
 };
@@ -49,7 +47,6 @@ function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
     var content = data.content;
-    //var count = data.count;
     
     var htmlTemplate = 
        `<!DOCTYPE html>
