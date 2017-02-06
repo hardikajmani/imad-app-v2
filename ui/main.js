@@ -1,4 +1,4 @@
-
+console.log('loaded');
 
 /*var button = document.getElementById('counter');
 
@@ -46,7 +46,7 @@ cmmtButton.onclick = function (){
                 }
         }; 
      //choose the correct url for the request
-     var name = 'title' 
+     var name = 'title'; 
      name = document.getElementById(title);
      var no = 1;
      console.log(name);
