@@ -1,4 +1,4 @@
-console.log('loaded');
+//console.log('loaded');
 
 /*var button = document.getElementById('counter');
 
@@ -28,7 +28,7 @@ button.onclick = function (){
 };*/
 
 var cmmtButton = document.getElementById('cmmtSubmit');
-console.log(document.title);
+//console.log(document.title);
 cmmtButton.onclick = function (){
     
     // Create request
