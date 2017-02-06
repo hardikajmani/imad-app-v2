@@ -7,30 +7,34 @@ app.use(morgan('combined'));
 
 var articles = {
    'art-one' : {
-    title : "Article One",
-    heading : "Article-one",
-        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
-                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    title : "Myself",
+    heading : "About Myself",
+        content : `<p>
+                        In this article I'm going to tell a little bit about myself.
+                    <br/> My name is Hardik Ajmani and I was born in Ambala,Haryana
+                    <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM
+                    </p>`
     
 },
    'art-two' : {
-    title : "Article Two",
-    heading : "Article-Two",
-        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
-                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    title : "Hobbies",
+    heading : "My hobbies",
+        content : `<p> I have many hobbies ans some of them are:</p>
+                    <ul>
+                        <li>Programming</li>
+                        <li>Making new things</li>
+                        <li>Gaming</li>
+                        <li>Photography</li>
+                    </ul>`
     
 },
   'art-three' : {
-    title : "Article Three",
-    heading : "Article-Three",
-        content : `<p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id             article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of         my web-app I love programming </p>
-                   <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>
-                    <p>This id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programmingThis id article one of my web-app I love programming </p>`
+    title : "AIM",
+    heading : "AIM in my life",
+        content : `<p>Hey everyone in this article I'm going to tell about my career.
+                    <br/> I am planning to pursue MS in Artificial Intelligence from MIT after completing my B.tech which I am doing in   SRM University, Chennai. 
+                    <br/> Then I may or may not pursue a PHd but I surely want to work with NASA at some point of my life.
+                    </p>`
     
 }
 };
