@@ -46,7 +46,8 @@ cmmtButton.onclick = function (){
                 }
         }; 
      //choose the correct url for the request
-     var name = document.getElementById(title);
+     var name = 'title' 
+     name = document.getElementById(title);
      var no = 1;
      console.log(name);
      switch(name){
