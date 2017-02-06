@@ -79,7 +79,9 @@ function createTemplate(data){
                 <hr/>
                 <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
+                <br/>
                 <textarea id="cmmt" placeholder="Enter a comment here" rows=4 cols=30 class="box"></textarea>
+                <br/>
                 <br/>
                 <input type="submit" id="cmmtSubmit" value="Submit" class="box">
             </div>
