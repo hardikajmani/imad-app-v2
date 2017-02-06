@@ -56,7 +56,7 @@ cmmtButton.onclick = function (){
                         break;
         case 'AIM':    no=3;
                         break;
-        defualt: no=1;
+        default: no=1;
      }
     //Make the request
      cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter/'+ no,true);
