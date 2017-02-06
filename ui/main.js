@@ -48,6 +48,7 @@ cmmtButton.onclick = function (){
      //choose the correct url for the request
      var name = document.getElementById(title);
      var no = 1;
+     console.log(name);
      switch(name){
          
         case 'Myself' : no=1;
