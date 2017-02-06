@@ -1,6 +1,6 @@
 //console.log('loaded');
 
-/*var button = document.getElementById('counter');
+var button = document.getElementById('counter');
 
 var counter = 0;
 button.onclick = function (){
@@ -25,7 +25,7 @@ button.onclick = function (){
      request.send(null);
     
     
-};*/
+};
 
 var cmmtButton = document.getElementById('cmmtSubmit');
 //console.log(document.title);
@@ -83,7 +83,7 @@ submit.onclick = function(){
                     //Capture a list of names and capture it as a list
                     
                     var names = request.responseText;
-                    names = JSON.parse(names); // conver from string to an array 
+                    names = JSON.parse(names); // convert from string to an array 
                     var list = '';
                     for( var i=0; i<names.length; i++){
                         list += '<li>' + names[i] + '</li>';
