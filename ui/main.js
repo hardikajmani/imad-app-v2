@@ -28,7 +28,7 @@ button.onclick = function (){
 };*/
 
 var cmmtButton = document.getElementById('cmmtSubmit');
-
+console.log(document.title);
 cmmtButton.onclick = function (){
     
     // Create request
