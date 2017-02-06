@@ -25,7 +25,33 @@ button.onclick = function (){
      request.send(null);
     
     
-}; 
+};
+
+var button = document.getElementById('cmmtSubmit');
+
+button.onclick = function (){
+    
+    // Create request
+        var cmmtRequest = new XMLHttpRequest();
+    
+    // Capture the response and store it in a variable
+        cmmtRequest.onreadystatechange = function(){
+            
+            if(cmmtRequest.readyState === XMLHttpRequest.DONE)
+            
+                if( cmmtRequest.status === 200){
+                    var counter = cmmtRequest.responseText;
+                    var span = document.getElementById('cmmtCount');
+                    span.innerHTML = counter.toString();
+                }
+        }; 
+      
+    //Make the request
+     request.open('GET','http://hardikajmani.imad.hasura-app.io/cmmtCounter',true);
+     request.send(null);
+    
+    
+};
 
 
 var submit = document.getElementById('submit_btn');
