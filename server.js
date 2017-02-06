@@ -7,36 +7,39 @@ app.use(morgan('combined'));
 
 var articles = {
    'art-one' : {
-    title : "Myself",
-    heading : "About Myself",
-        content : `<p>
-                        In this article I'm going to tell a little bit about myself.
-                    <br/> My name is Hardik Ajmani and I was born in Ambala,Haryana,
-                    <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM.
-                    <br/> This is my first article.
-                    <br/> I love programming!!!
-                    </p>`
+                title : "Myself",
+                heading : "About Myself",
+                content : `<p>
+                                    In this article I'm going to tell a little bit about myself.
+                                <br/> My name is Hardik Ajmani and I was born in Ambala,Haryana,
+                                <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM.
+                                <br/> This is my first article.
+                                <br/> I love programming!!!
+                                </p>`,
+                count:0
     
 },
    'art-two' : {
-    title : "Hobbies",
-    heading : "My hobbies",
-        content : `<p> I have many hobbies ans some of them are:</p>
-                    <ul>
-                        <li>Programming</li>
-                        <li>Making new things</li>
-                        <li>Gaming</li>
-                        <li>Photography</li>
-                    </ul>`
+                title : "Hobbies",
+                heading : "My hobbies",
+                content : `<p> I have many hobbies ans some of them are:</p>
+                                <ul>
+                                    <li>Programming</li>
+                                    <li>Making new things</li>
+                                    <li>Gaming</li>
+                                    <li>Photography</li>
+                                </ul>`,
+                count:0
     
 },
   'art-three' : {
-    title : "AIM",
-    heading : "AIM in my life",
-        content : `<p>Hey everyone in this article I'm going to tell about my career.
-                    <br/> I am planning to pursue MS in Artificial Intelligence from MIT after completing my B.tech which I am doing in   SRM University, Chennai. 
-                    <br/> Then I may or may not pursue a PHd but I surely want to work with NASA at some point of my life.
-                    </p>`
+                title : "AIM",
+                heading : "AIM in my life",
+                content : `<p>Hey everyone in this article I'm going to tell about my career.
+                                <br/> I am planning to pursue MS in Artificial Intelligence from MIT after completing my B.tech which I am doing in   SRM University, Chennai. 
+                                <br/> Then I may or may not pursue a PHd but I surely want to work with NASA at some point of my life.
+                                </p>`,
+                count:0
     
 }
 };
@@ -46,6 +49,7 @@ function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
     var content = data.content;
+    var count = data.count;
     
     var htmlTemplate = 
             `<!DOCTYPE html>
@@ -75,7 +79,7 @@ function createTemplate(data){
            
            <div class="comments">
                 <br/>
-                <h3> Comments     <span id="cmmtCount">0</span></h3>
+                <h3> Comments     <span id="cmmtCount">${count}</span></h3>
                 <hr/>
                 <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
