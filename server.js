@@ -105,7 +105,7 @@ app.get('/cs',function (req, res){
 var cmmtCounter = 0;
 app.get('/cmmtCounter',function (req, res){
     cmmtCounter++;
-    res.send(counter.toString());
+    res.send(cmmtCounter.toString());
 });
 
 var names =[];
