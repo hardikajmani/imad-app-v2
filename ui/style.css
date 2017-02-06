@@ -70,3 +70,13 @@ a:active {
     text-decoration:underline;
     font-weight:bold;
 }
+
+.comments {
+        color: #5d4f4f;
+        padding : 20px;
+}
+
+.box {
+    border-radius: 20px 30px 40px 80px;
+    box-shadow: 10px 10px 5px #888888;
+}
