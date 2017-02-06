@@ -85,6 +85,10 @@ function createTemplate(data){
                 <br/>
                 <input type="submit" id="cmmtSubmit" value="Submit" class="box">
             </div>
+            
+            <script type="text/javascript" src="/ui/main.js">
+        </script>
+            
         </body>
         </html>
     `;
