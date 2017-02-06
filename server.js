@@ -55,7 +55,7 @@ function createTemplate(data){
             `<!DOCTYPE html>
         <html>
         <head>
-          <title> ${title}</title>
+          <title > ${title}</title>
              <meta name="viewport" content="width-device-width,initial-scale=1"/>   <!-- For making the pages to adjust themselves for various                                                                                                                      screen sizes -->
             <link rel="stylesheet" type="text/css" href="/ui/style.css" />
           
@@ -110,10 +110,16 @@ app.get('/cs',function (req, res){
     res.send(counter.toString());
 });
 
-var cmmtCounter = 0;
-app.get('/counter',function (req, res){
-    cmmtCounter++;
-    res.send(cmmtCounter.toString());
+var cmmtCounter = {
+    
+    '1':0,
+    '2':0,
+    '3':0
+};
+app.get('/counter/:no',function (req, res){
+    var no = req.params.no;
+    cmmtCounter[no]++;
+    res.send(cmmtCounter[no].toString());
 });
 
 var names =[];
