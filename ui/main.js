@@ -27,9 +27,9 @@ button.onclick = function (){
     
 };
 
-var button = document.getElementById('cmmtSubmit');
+var cmmtButton = document.getElementById('cmmtSubmit');
 
-button.onclick = function (){
+cmmtButton.onclick = function (){
     
     // Create request
         var cmmtRequest = new XMLHttpRequest();
@@ -47,8 +47,8 @@ button.onclick = function (){
         }; 
       
     //Make the request
-     request.open('GET','http://hardikajmani.imad.hasura-app.io/cmmtCounter',true);
-     request.send(null);
+     cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/cmmtCounter',true);
+     cmmtRequest.send(null);
     
     
 };
