@@ -11,8 +11,10 @@ var articles = {
     heading : "About Myself",
         content : `<p>
                         In this article I'm going to tell a little bit about myself.
-                    <br/> My name is Hardik Ajmani and I was born in Ambala,Haryana
-                    <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM
+                    <br/> My name is Hardik Ajmani and I was born in Ambala,Haryana,
+                    <br/> Now my famliy live in Mumbai and I am studying in Chennai in SRM.
+                    <br/> This is my first article.
+                    <br/> I love programming!!!
                     </p>`
     
 },
