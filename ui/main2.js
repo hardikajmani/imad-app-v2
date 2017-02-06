@@ -34,12 +34,11 @@
         //Make the request
          cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter/'+ no,true);
          cmmtRequest.send(null);
-    };
-    
-    cmmtButton.onclick = function(){
-        
-        var nameVal = document.getElementById(cmmtName).value;
+         
+          var nameVal = document.getElementById(cmmtName).value;
         var ul = document.getElementById(list);
         ul.innerHTML = '<li>' + nameVal + '</li>';
     
     };
+    
+  
