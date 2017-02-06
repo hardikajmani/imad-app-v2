@@ -47,15 +47,16 @@ cmmtButton.onclick = function (){
         }; 
      //choose the correct url for the request
      var name = document.getElementById(title);
-     var no = 0;
+     var no = 1;
      switch(name){
          
         case 'Myself' : no=1;
                          break;
         case 'Hobbies' :    no=2;
                         break;
-        case 'AIM': no=3;
+        case 'AIM':    no=3;
                         break;
+        defualt: no=1;
      }
     //Make the request
      cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter/'+ no,true);
