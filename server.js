@@ -49,16 +49,15 @@ function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
     var content = data.content;
-    var count = data.count;
+    //var count = data.count;
     
     var htmlTemplate = 
-            `<!DOCTYPE html>
+       `<!DOCTYPE html>
         <html>
         <head>
           <title>${title}</title>
-             <meta name="viewport" content="width-device-width,initial-scale=1"/>   <!-- For making the pages to adjust themselves for various                                                                                                                      screen sizes -->
-            <link rel="stylesheet" type="text/css" href="/ui/style.css" />
-          
+          <meta name="viewport" content="width-device-width,initial-scale=1"/>   
+          <link rel="stylesheet" type="text/css" href="/ui/style.css" />
         </head>
         
         <body>
@@ -69,6 +68,7 @@ function createTemplate(data){
                         </h1>
                     </div>
                     <hr/>
+                    
                     <div>
                         <h3> ${heading}</h3>
                         ${content}
@@ -79,7 +79,7 @@ function createTemplate(data){
            
            <div class="comments">
                 <br/>
-                <h3> Comments     <span id="cmmtCount">${count}</span></h3>
+                <h3> Comments     <span id="cmmtCount">0</span></h3>
                 <hr/>
                 <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
