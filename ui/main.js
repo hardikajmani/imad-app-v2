@@ -47,7 +47,7 @@ cmmtButton.onclick = function (){
         }; 
       
     //Make the request
-     cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/cmmtCounter',true);
+     cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter',true);
      cmmtRequest.send(null);
     
     
