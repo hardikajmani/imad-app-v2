@@ -41,7 +41,7 @@ cmmtButton.onclick = function (){
             
                 if( cmmtRequest.status === 200){
                     var counter = cmmtRequest.responseText;
-                    var span = document.getElementById('count');
+                    var span = document.getElementById('cmmtCount');
                     span.innerHTML = counter.toString();
                 }
         }; 
