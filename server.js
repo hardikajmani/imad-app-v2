@@ -55,7 +55,7 @@ function createTemplate(data){
             `<!DOCTYPE html>
         <html>
         <head>
-          <title > ${title}</title>
+          <title id="title" > ${title}</title>
              <meta name="viewport" content="width-device-width,initial-scale=1"/>   <!-- For making the pages to adjust themselves for various                                                                                                                      screen sizes -->
             <link rel="stylesheet" type="text/css" href="/ui/style.css" />
           
