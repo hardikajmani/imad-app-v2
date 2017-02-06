@@ -77,15 +77,11 @@ function createTemplate(data){
                 <br/>
                 <h3> Comments </h3>
                 <hr/>
-           </div>
-           
-           <div class="comments box">
-                
-                <input type="text" id="cmmtName" placeholder="   Name">
+                <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
-                <textarea id="cmmt" placeholder="Enter a comment here" rows=4 cols=30></textarea>
+                <textarea id="cmmt" placeholder="Enter a comment here" rows=4 cols=30 class="box"></textarea>
                 <br/>
-                <input type="submit" id="cmmtSubmit" value="Submit">
+                <input type="submit" id="cmmtSubmit" value="Submit" class="box">
             </div>
         </body>
         </html>
