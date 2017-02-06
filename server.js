@@ -78,6 +78,9 @@ function createTemplate(data){
                 <br/>
                 <h3> Comments     <span id="cmmtCount">0</span></h3>
                 <hr/>
+                <ul id="list">
+                </ul>
+                <br/>
                 <input type="text" id="cmmtName" placeholder="   Name" class="box">
                 <br/>
                 <br/>
