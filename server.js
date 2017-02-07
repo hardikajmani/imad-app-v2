@@ -133,6 +133,37 @@ app.get('/submit-name',function(req, res){ // query format url sfffgog?name=xxxx
 });
 
 
+var cmmtNames ={
+    
+    'one':[],
+    'two':[],
+    'three':[]
+};
+
+app.get('/submitCmmtName/:siteName',function(req, res){ // query format url sfffgog?name=xxxxxx
+    var name = req.query.name;
+    var siteName = req.params.siteName; 
+     cmmtNames[siteName].push(name);
+     
+     //JSON(JavaScript Object Notation)
+     res.send(JSON.stringify(cmmtNames[siteName]));
+});
+
+var cmmtContent ={
+    
+    'one':[],
+    'two':[],
+    'three':[]
+};
+
+app.get('/submitCmmtName/:siteName',function(req, res){ // query format url sfffgog?name=xxxxxx
+    var cmmt = req.query.cmmt;
+    var siteName = req.params.siteName; 
+     cmmtContent[siteName].push(cmmt);
+     
+     //JSON(JavaScript Object Notation)
+     res.send(JSON.stringify(cmmtContent[siteName]));
+});
 
 app.get('/:artName',function (req,res){
   var artName = req.params.artName;
