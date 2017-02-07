@@ -20,14 +20,18 @@
          //choose the correct url for the request
          var name = document.title;
          var no = 1;
+         var num = 'one';
          console.log(name);
          switch(name){
              
             case 'Myself' : no=1;
+                            num = 'one';
                              break;
-            case 'Hobbies' :    no=2;
+            case 'Hobbies' : no=2;
+                             num = 'two';
                             break;
             case 'AIM':    no=3;
+                             num = '3';
                             break;
             default: no=1;
          }
@@ -37,7 +41,7 @@
          
         var nameVal = document.getElementById(cmmtName).value;
         
-        cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/submitCmmtName')
+        cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/submitCmmtName/' + num)
     
     };
     
