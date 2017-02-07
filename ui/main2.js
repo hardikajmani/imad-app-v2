@@ -35,9 +35,9 @@
          cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/counter/'+ no,true);
          cmmtRequest.send(null);
          
-          var nameVal = document.getElementById(cmmtName).value;
-        var ul = document.getElementById(list);
-        ul.innerHTML = '<li>' + nameVal + '</li>';
+        var nameVal = document.getElementById(cmmtName).value;
+        
+        cmmtRequest.open('GET','http://hardikajmani.imad.hasura-app.io/submitCmmtName')
     
     };
     
