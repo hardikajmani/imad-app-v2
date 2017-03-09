@@ -119,7 +119,7 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a request 
-    ppol.query('SELECT * from test',function(err,result){
+    pool.query('SELECT * from test',function(err,result){
         if(err){
             res.status(500).send(err.toString());
         } else{
