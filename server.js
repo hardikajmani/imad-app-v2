@@ -203,7 +203,7 @@ app.get('/article/:artName',function (req,res){
               res.send(createTemplate(artData));
           }
       }
-  })
+  });
   
 });
 
