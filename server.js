@@ -194,7 +194,7 @@ app.get('/submitCmmtName/:siteName',function(req, res){ // query format url sfff
 
 app.get('/article/:artName',function (req,res){
   
-  pool.query("SELECT * FROM articles WHERE title = '" + req.params.artName + "'", function(err,result){
+  pool.query("SELECT * FROM articles WHERE title = $1",[req.params.artName], function(err,result){
       if(err){
           res.status(500).send(err.Tostring());
       } else {
